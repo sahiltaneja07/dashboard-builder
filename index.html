@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="dashboardBuilder">
+
+<head>
+    <title>Dashboard builder</title>
+    <link rel="stylesheet" href="app/stylesheets/bootstrap.css" />
+    <link rel="stylesheet" href="app/stylesheets/main.css" />
+</head>
+
+<body>
+	<div class="container-fluid">
+    	<ui-view></ui-view>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="app/dashboard/dashboard.module.js"></script>
+    <script src="app/dashboard/dashboard.config.js"></script>
+    <script src="app/dashboard/dashboard.component.js"></script>
+
+
+</body>
+</html>

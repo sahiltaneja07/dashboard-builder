@@ -1,0 +1,18 @@
+<div class="row">
+	<div class="col-md-12">
+		<ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" ng-class="{'active': dashboard.dashboardOwner=='principal'}" ng-click="dashboard.dashboardOwner='principal'"><a href="javascript:void(0)" aria-controls="principal" role="tab" data-toggle="tab">Principal</a></li>
+		    <li role="presentation" ng-class="{'active': dashboard.dashboardOwner=='chancellor'}" ng-click="dashboard.dashboardOwner='chancellor'"><a href="javascript:void(0)" aria-controls="chancellor" role="tab" data-toggle="tab">Chancellor</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane" ng-class="{'active': dashboard.dashboardOwner=='principal'}" id="principal">
+		    	principal area. ... .. . .
+		    </div>
+		    <div role="tabpanel" class="tab-pane" ng-class="{'active': dashboard.dashboardOwner=='chancellor'}" id="chancellor">
+		    	chancellor chancellor chancellor chancellor
+		    </div>
+		  </div>
+	</div>
+</div>
