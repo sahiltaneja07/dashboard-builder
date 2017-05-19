@@ -1,5 +1,38 @@
-Body{
+body{
 	background-color: #cecece;
 	padding: 0px;
 	margin: 0px;
+}
+
+.mainClass{
+	margin: 20px 0px;
+}
+
+.bgWhite{
+    background-color: #fff;
+}
+
+.listOfComponents{
+	padding: 20px 15px;
+}
+
+.draggable-component{
+	cursor: -webkit-grab;
+	padding: 8px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    margin: 8px 0px;
+}
+
+.minHeight500{
+	min-height: 500px;
+}
+
+.dashboard-section{
+	padding: 15px;
+}
+
+.js-remove{
+	color: red;
+	cursor: pointer;
 }

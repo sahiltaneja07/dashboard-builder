@@ -1,18 +1,45 @@
 <div class="row">
-	<div class="col-md-12">
-		<ul class="nav nav-tabs" role="tablist">
-		    <li role="presentation" ng-class="{'active': dashboard.dashboardOwner=='principal'}" ng-click="dashboard.dashboardOwner='principal'"><a href="javascript:void(0)" aria-controls="principal" role="tab" data-toggle="tab">Principal</a></li>
-		    <li role="presentation" ng-class="{'active': dashboard.dashboardOwner=='chancellor'}" ng-click="dashboard.dashboardOwner='chancellor'"><a href="javascript:void(0)" aria-controls="chancellor" role="tab" data-toggle="tab">Chancellor</a></li>
-		  </ul>
+	<div class="col-md-7">
+		<div class="bgWhite dashboard-section">
+			<ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" ng-class="{'active': dashboard.dashboardOwner=='principal'}" ng-click="dashboard.dashboardOwner='principal'"><a href="javascript:void(0)" aria-controls="principal" role="tab" data-toggle="tab">Principal</a></li>
+			    <li role="presentation" ng-class="{'active': dashboard.dashboardOwner=='chancellor'}" ng-click="dashboard.dashboardOwner='chancellor'"><a href="javascript:void(0)" aria-controls="chancellor" role="tab" data-toggle="tab">Chancellor</a></li>
+			  </ul>
 
-		  <!-- Tab panes -->
-		  <div class="tab-content">
-		    <div role="tabpanel" class="tab-pane" ng-class="{'active': dashboard.dashboardOwner=='principal'}" id="principal">
-		    	principal area. ... .. . .
-		    </div>
-		    <div role="tabpanel" class="tab-pane" ng-class="{'active': dashboard.dashboardOwner=='chancellor'}" id="chancellor">
-		    	chancellor chancellor chancellor chancellor
-		    </div>
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane" ng-class="{'active': dashboard.dashboardOwner=='principal'}" id="principal">
+			    	<div id="droppable-area-principal" class="minHeight500"></div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" ng-class="{'active': dashboard.dashboardOwner=='chancellor'}" id="chancellor">
+			    	<div id="droppable-area-chancellor" class="minHeight500"></div>
+			    </div>
+			  </div>
 		  </div>
+	</div>
+	<div class="col-md-5">
+		<div class="bgWhite">
+			<div id="listOfComponents" class="listOfComponents">
+				<div class="draggable-component">
+					<span>Component 1</span>
+					<span><i class="js-remove">✖</i></span>
+				</div>
+				<div class="draggable-component">
+					<span>88765 78y jo uy</span>
+					<span><i class="js-remove">✖</i></span>
+				</div>
+				<div class="draggable-component">
+					<span>jgjgkjhls ilh lsdkjgh gf</span>
+					<span><i class="js-remove">✖</i></span>
+				</div>
+				<div class="draggable-component">
+					<span>groe nno ij ad</span>
+					<span><i class="js-remove">✖</i></span>
+				</div>
+				<div class="draggable-component">
+					<span>kjsnvsdk sjdn  lksdml</span>
+					<span><i class="js-remove">✖</i></span>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

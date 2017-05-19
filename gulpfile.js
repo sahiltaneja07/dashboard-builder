@@ -27,6 +27,7 @@ gulp.task('uglify', ['clean-deploy'], function() {
     return gulp.src([
         'node_modules/angular/angular.js',
         'node_modules/angular-ui-router/release/angular-ui-router.js',
+        'node_modules/sortablejs/Sortable.js',
         'app/dashboard/*.js',
         './app.js'
     ])
@@ -42,6 +43,7 @@ gulp.task('concat', ['uglify'], function() {
             [
                 'build/js/angular.js',
                 'build/js/angular-ui-router.js',
+                'build/js/Sortable.js',
                 'build/js/app.js',
                 'build/js/dashboard.module.js',
                 'build/js/dashboard.config.js',
