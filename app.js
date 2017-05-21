@@ -1,6 +1,7 @@
 angular.module('dashboardBuilder', [
         'ui.router',
-        'dashboardModule'
+        'dashboardModule',
+        'chartModule'
     ])
     .config(dashboardBuilderConfig);
 

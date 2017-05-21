@@ -1,0 +1,18 @@
+<div class="draggable-component">
+	<div class="chart-header">
+		<div class="float-left">{{chart.title}}</div>
+		<div class="float-right"><i class="js-remove">✖</i></div>
+		<div class="clear-both"></div>
+	</div>
+	<div class="chart-body">
+		<ul ng-repeat="row in chart.data">
+			<li class="chart-data">
+				<div class="category">{{row.key}} : {{row.value}}</div>
+				<div class="sub-category">
+					<p>{{row.key}} Male : {{row.male}}</p>
+					<p>{{row.key}} Female : {{row.female}}</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

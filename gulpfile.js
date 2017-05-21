@@ -25,10 +25,12 @@ gulp.task('clean-deploy', function() {
 
 gulp.task('uglify', ['clean-deploy'], function() {
     return gulp.src([
+        'node_modules/jquery/dist/jquery.js',
         'node_modules/angular/angular.js',
         'node_modules/angular-ui-router/release/angular-ui-router.js',
         'node_modules/sortablejs/Sortable.js',
         'app/dashboard/*.js',
+        'app/available-components/*.js',
         './app.js'
     ])
     .pipe(ngAnnotate())
@@ -40,14 +42,17 @@ gulp.task('uglify', ['clean-deploy'], function() {
 
 gulp.task('concat', ['uglify'], function() {
     return gulp.src(
-            [
+            [   
+                'build/js/jquery.js',
                 'build/js/angular.js',
                 'build/js/angular-ui-router.js',
                 'build/js/Sortable.js',
                 'build/js/app.js',
                 'build/js/dashboard.module.js',
                 'build/js/dashboard.config.js',
-                'build/js/dashboard.component.js'
+                'build/js/dashboard.component.js',
+                'build/js/chart.module.js',
+                'build/js/chart.component.js'
             ]
         )
         .pipe(gp_concat('all.js'))

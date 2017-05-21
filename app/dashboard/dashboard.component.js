@@ -17,6 +17,47 @@
         var vm = this;
 
         vm.dashboardOwner = 'principal';
+        vm.charts = [{
+            title: 'Geographic diversity of students',
+            data: [{
+                key: 'Asian',
+                value: '30%',
+                male: '45%',
+                female: '55%'
+            },{
+                key: 'Europeans',
+                value: '10%',
+                male: '45%',
+                female: '55%'
+            },{
+                key: 'Africans',
+                value: '10%',
+                male: '45%',
+                female: '55%'
+            },{
+                key: 'Latin Americans',
+                value: '10%',
+                male: '45%',
+                female: '55%'
+            },{
+                key: 'Americans',
+                value: '40%',
+                male: '45%',
+                female: '55%'
+            }]
+        },{
+            title: 'Bachelors degree',
+            data: []
+        },{
+            title: 'Hobbies',
+            data: []
+        },{
+            title: 'Major of study',
+            data: []
+        },{
+            title: 'Future interests',
+            data: []
+        }];
 
         var draggableComponents = document.getElementById('listOfComponents');
         var droppableAreaPrincipal = document.getElementById('droppable-area-principal');

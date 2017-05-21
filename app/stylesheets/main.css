@@ -17,11 +17,23 @@ body{
 }
 
 .draggable-component{
+	margin: 8px 0px;
+}
+
+.chart-header{
 	cursor: -webkit-grab;
 	padding: 8px;
     border: 1px solid #cecece;
     border-radius: 4px;
-    margin: 8px 0px;
+    font-weight: 600;
+    background-color: #cecece;
+}
+
+.chart-body{
+	padding: 8px;
+	border: 1px solid #cecece;
+	border-top: none;
+	display: none;
 }
 
 .minHeight500{
@@ -34,5 +46,34 @@ body{
 
 .js-remove{
 	color: red;
+	cursor: pointer;
+}
+
+.componentHeader{
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.clear-both{
+	clear: both;
+}
+
+#listOfComponents .js-remove{
+	display: none;
+}
+
+.sub-category{
+	display: none;
+}
+
+.chart-data{
 	cursor: pointer;
 }

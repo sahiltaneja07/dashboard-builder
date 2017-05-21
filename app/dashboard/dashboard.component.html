@@ -19,25 +19,9 @@
 	<div class="col-md-5">
 		<div class="bgWhite">
 			<div id="listOfComponents" class="listOfComponents">
-				<div class="draggable-component">
-					<span>Component 1</span>
-					<span><i class="js-remove">✖</i></span>
-				</div>
-				<div class="draggable-component">
-					<span>88765 78y jo uy</span>
-					<span><i class="js-remove">✖</i></span>
-				</div>
-				<div class="draggable-component">
-					<span>jgjgkjhls ilh lsdkjgh gf</span>
-					<span><i class="js-remove">✖</i></span>
-				</div>
-				<div class="draggable-component">
-					<span>groe nno ij ad</span>
-					<span><i class="js-remove">✖</i></span>
-				</div>
-				<div class="draggable-component">
-					<span>kjsnvsdk sjdn  lksdml</span>
-					<span><i class="js-remove">✖</i></span>
+				<h2 class="componentHeader">List of Components</h2>
+				<div ng-repeat="chart in dashboard.charts">
+					<chart title="chart.title" data="chart.data"></chart>
 				</div>
 			</div>
 		</div>
