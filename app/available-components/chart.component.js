@@ -15,10 +15,34 @@
         };
     }
 
-    chartCtrl.$inject = [];
+    chartCtrl.$inject = ['$scope'];
 
-    function chartCtrl() {
+    function chartCtrl($scope) {
         var vm = this;
+
+        vm.$onInit = function () {
+            $scope.options = {
+                chart: {
+                    type: 'pieChart',
+                    height: 350,
+                    x: function(d){return d.key;},
+                    y: function(d){return d.value;},
+                    showLabels: true,
+                    duration: 500,
+                    labelThreshold: 0.01,
+                    labelSunbeamLayout: true,
+                    legend: {
+                        margin: {
+                            top: 5,
+                            right: 35,
+                            bottom: 5,
+                            left: 0
+                        }
+                    }
+                }
+            };
+            $scope.data = vm.data;
+        };
 
         $(document).on('click', '.chart-header', function(e){
             if($(this).parent().find('.chart-body').css('display') === 'none'){

@@ -1,5 +1,6 @@
 angular.module('dashboardBuilder', [
         'ui.router',
+        'nvd3',
         'dashboardModule',
         'chartModule'
     ])

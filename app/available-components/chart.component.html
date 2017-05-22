@@ -5,7 +5,8 @@
 		<div class="clear-both"></div>
 	</div>
 	<div class="chart-body">
-		<ul ng-repeat="row in chart.data">
+		<nvd3 options="options" data="data"></nvd3>
+		<!-- <ul ng-repeat="row in chart.data">
 			<li class="chart-data">
 				<div class="category">{{row.key}} : {{row.value}}</div>
 				<div class="sub-category">
@@ -13,6 +14,6 @@
 					<p>{{row.key}} Female : {{row.female}}</p>
 				</div>
 			</li>
-		</ul>
+		</ul> -->
 	</div>
 </div>
